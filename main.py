@@ -1,13 +1,13 @@
 import PySimpleGUI as psgui
 
 
-
 def main():
     print("Gui demo")
 
     layout = [
         [psgui.Text('This is some text in this window')],
-        [psgui.Button('PRESS ME')]
+        [psgui.Button('PRESS ME')],
+        [psgui.Text('Enter some text here', size=(20, 1)), psgui.Input(key='text input')]
     ]
 
     main_window = psgui.Window(title='This is a window', layout=layout, margins=(125, 125))
